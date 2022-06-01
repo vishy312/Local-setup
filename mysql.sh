@@ -16,12 +16,12 @@ function print_color(){
 print_color blue "Database Server is being Configured..............."
 
 #setting up repository and installing mariadb
-print_color green "setting up repository and installing mariadb"
+print_color green "setting up repository and installing mariadb...."
 yum update -y
 yum install epel-release -y
 yum install git zip unzip -y
 yum install mariadb-server -y
-
+print_color "mariadb is installed!"
 
 #configure mariadb
 print_color green "configure mariadb"

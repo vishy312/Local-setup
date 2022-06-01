@@ -14,7 +14,7 @@ function print_color(){
 print_color blue "Memacache Server is being configured....................."
 
 #installing and configuring memacache service
-print_color green "installing and configuring memacache service"
+print_color green "installing and configuring memacache service......."
 yum install epel-release -y
 yum install -y memacached
 systemctl start memacached
